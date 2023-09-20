@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortest Path Visualizer</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <div class="inner-div">
+        <p class="note"><B>NOTE:</B> <I>Enter number of nodes and edges correctly because it would impact the answer.</I></p>
+        <p>Enter number of nodes</p>
+        <input id="nodes" type="number" placeholder="Enter number of nodes" />
+        <p>Enter the edges between the nodes ( <i>start the nodes from 0</i> )</p>
+        <input id="edges" type="text" placeholder="src-dest-wght " />
+        <div>
+          <button class="generate-btn" onclick="generate()">
+            Generate the graph
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="flex-box">
+      <div id="graph-container"></div>
+    </div>
+
+    <div id="dijk-in">
+      <div class="input-div">
+        <p>Enter the start node</p>
+        <input type="number" placeholder="start node" id="startNode" required/>
+        <p>Enter the end node</p>
+        <input type="number" placeholder="end node" id="endNode" required/>
+        <button onclick="find()" id="find-btn">Find path</button
+        ><button class="change-graph" onclick="changeGraph()">
+          Change graph
+        </button>
+        <button class="back" onclick="back()">
+          Back
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

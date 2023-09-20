@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('bg.jpg');
+
+}
+
+.note{
+  font-size: 13px;
+}
+
+.center {
+  background-color: blanchedalmond;
+  width: 40%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:25px;
+}
+
+
+.inner-div {
+  height: 70%;
+  width: 80%;
+  /* border:1px solid black;  */
+  padding-left: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.generate-btn {
+  background-color: rgb(64, 138, 203);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: auto;
+  height: 40px;
+  font-size: medium;
+}
+
+input {
+  border: none;
+  height: 40px;
+  width: 70%;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+#graph-container {
+  display:none;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+}
+
+.change-graph{
+  display: none;
+  background-color: #2cc636;
+  width:100%;
+  height:30px;
+  border-radius: 5px;
+  color:white;
+  border:none;
+  margin-top: 20px;
+}
+
+.back{
+  display: none;
+  background-color: #c62c39;
+  width:100%;
+  height:30px;
+  border-radius: 5px;
+  color:white;
+  border:none;
+  margin-top: 20px;
+}
+
+#find-btn{
+  display: none;
+  background-color: #2893df;
+  width:100%;
+  height:30px;
+  border-radius: 5px;
+  border:none;
+  color:white;
+  margin : 20px 0px 0px 0px;
+}
+
+#dijk-in{
+  display:none;
+  width:40%;
+  height:60%;
+  margin-left: 50px;
+  background-color: white;
+}
+
+#startNode, #endNode {
+  width : 100%;
+  border : 1px solid black;
+}
+
+.input-div{
+  width:90%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+}
+
+.node {
+  fill: #2893df; /* Node color */
+  stroke: #fff; /* Node border color */
+  stroke-width: 2; /* Node border thickness */
+}
+
+/* Link styles */
+.link {
+  stroke: black; /* Link color */
+  stroke-width: 2; /* Link thickness */
+}
+
+
+#flex-box{
+  display: flex;
+  flex-direction: column;
+}
+
